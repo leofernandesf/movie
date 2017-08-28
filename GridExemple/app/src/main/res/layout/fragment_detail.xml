@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.leo.gridexemple.ui.detail.DetailFragment">
+
+    <include
+        android:id="@+id/second_view_toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/second_view_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/colorMondelle">
+
+                <TextView
+                    android:id="@+id/second_view_header_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image_thumb"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/second_view_data_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/image_thumb"
+                    android:gravity="center"
+                    android:text="testetafanijs qajsdn"
+                    android:textSize="30sp" />
+
+
+                <TextView
+                    android:id="@+id/second_view_avaliation_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/second_view_data_text"
+                    android:layout_alignLeft="@+id/second_view_data_text"
+                    android:layout_alignRight="@+id/second_view_data_text"
+                    android:layout_alignStart="@+id/second_view_data_text"
+                    android:layout_below="@+id/second_view_data_text"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/second_view_favorite_button"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/second_view_avaliation_text"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/image_thumb"
+                    android:background="@drawable/selector_favorite" />
+
+                <TextView
+                    android:id="@+id/second_view_overview_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_thumb"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/second_view_trailer_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/second_view_overview_text"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Trailers"
+                    android:textSize="20sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/second_view_trailer_recyclerView"
+                    android:layout_below="@+id/second_view_trailer_text"
+                    android:paddingTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/second_view_reviews_text"
+                    android:layout_below="@+id/second_view_trailer_recyclerView"
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

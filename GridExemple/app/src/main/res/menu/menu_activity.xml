@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/miPopular"
+        android:icon="@android:drawable/ic_input_add"
+        app:showAsAction="never"
+        android:title="@string/action_popular"
+        android:checked="false">
+    </item>
+    <item
+        android:id="@+id/miTop"
+        android:icon="@android:drawable/ic_menu_help"
+        app:showAsAction="never"
+        android:title="@string/action_top">
+    </item>
+    <item
+        android:id="@+id/miFavorite"
+        android:icon="@android:drawable/ic_menu_help"
+        app:showAsAction="never"
+        android:title="@string/action_favorite">
+    </item>
+</menu>
